@@ -60,5 +60,13 @@
         <members>*</members>
         <name>SiteDotCom</name>
     </types>
+    <types>
+        <members>CompanyInfo</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExperienceBundle</name>
+    </types>
     <version>59.0</version>
 </Package>
