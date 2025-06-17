@@ -8,54 +8,56 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CartId</field>
+                <field>FlowLabel</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Description</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>TotalAmount</field>
+                <behavior>Edit</behavior>
+                <field>AssociatedRecordId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>TaxAmount</field>
+                <behavior>Edit</behavior>
+                <field>CreatedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>TotalAmountWithTax</field>
+                <behavior>Edit</behavior>
+                <field>LastModifiedById</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>AdjustmentSource</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>AdjustmentType</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>AdjustmentValue</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>AdjustmentTargetType</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>PriceAdjustmentCauseId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>AdjustmentBasisReferenceId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Priority</field>
+                <behavior>Edit</behavior>
+                <field>FlowCategory</field>
             </layoutItems>
         </layoutColumns>
-        <style>OneColumn</style>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ApiName</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>FlowType</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SegmentId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CreatedDate</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LastModifiedDate</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>FlowSubcategory</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -64,6 +66,21 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <relatedLists>
+        <fields>VersionNumber</fields>
+        <fields>ProgressStatus</fields>
+        <fields>LastModifiedDate</fields>
+        <fields>Entries</fields>
+        <fields>Exits</fields>
+        <fields>Errors</fields>
+        <fields>Name</fields>
+        <fields>CreatedDate</fields>
+        <fields>RunInMode</fields>
+        <fields>ApiVersion</fields>
+        <fields>CapacityCategory</fields>
+        <fields>AreMetricsLoggedToDataCloud</fields>
+        <relatedList>FlowRecordVersions</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
